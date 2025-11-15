@@ -1,0 +1,42 @@
+### GET all
+GET http://localhost:8080/contacts
+Accept: application/json
+
+###
+
+### GET by id (reemplaza {id})
+GET http://localhost:8080/contacts/{id}
+Accept: application/json
+
+###
+
+### POST create
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Ana",
+  "lastName": "Perez",
+  "email": "ana.perez@example.com",
+  "favoriteColor": "blue",
+  "birthday": "1990-05-12"
+}
+
+###
+
+### PUT update (reemplaza {id})
+PUT http://localhost:8080/contacts/{id}
+Content-Type: application/json
+
+{
+  "firstName": "Ana Maria",
+  "lastName": "Perez",
+  "email": "ana.perez@example.com",
+  "favoriteColor": "green",
+  "birthday": "1990-05-12"
+}
+
+###
+
+### DELETE (reemplaza {id})
+DELETE http://localhost:8080/contacts/{id}
